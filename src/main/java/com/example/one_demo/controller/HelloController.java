@@ -17,5 +17,11 @@ public class HelloController {
         return "Hello" + name;
     }
 
+    @RequestMapping("/nameAndAge")
+    public String hello(@RequestParam String name,
+                        @RequestParam Integer age){
+        return "Hello," + name + ".my age is " + age;
+    }
+
 
 }
